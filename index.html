@@ -46,14 +46,36 @@
             }
         }
 
+        a{
+            text-align: center;
+            font-family: "century gothic";
+            font-weight: bold;
+
+           animation-name: texto; 
+           animation-duration: 3s;
+           animation-iteration-count: 1;
+           animation-fill-mode: backwards;
+           animation-delay: 3s;
+        }
+
+        @keyframes texto{
+            from{
+                color:black;
+
+            }
+            to{
+                color: rgb(15, 16, 80);
+            }
+        }
+
         img{
             height: 200px;
-            width: 200px;
+            width: 400px;
             display: block;/* centrar imagen */
             margin: auto;/* centrar imagen */
             opacity: 0;
 
-            animation: imagen 3s 6s 1 forwards;
+            animation: imagen 3s 3s 1 forwards;
         }
 
         @keyframes imagen {
@@ -65,11 +87,29 @@
             }
             
         }
+
+        
         </style>
     </head>
     <body>
-        <h1>PROMOCION 2026 - CI</h1>
-        <P>IESTP MANUEL SEOANE CORRALES</P>
+        <h1>Manuel Seoane Corrales</h1>
+        <P>Manuel Seoane Corrales: político, empresario y dirigente deportivo peruano</P>
+        <a>Manuel Seoane Corrales (Lima, 1900 – 1965) 
+            fue un destacado político, 
+            economista, empresario y dirigente 
+            futbolístico peruano. 
+            Ocupó el cargo de Vicepresidente de la República 
+            durante el gobierno del general Manuel A. Odría (1950-1956), 
+            además de desempeñarse como 
+            Ministro de Hacienda y Comercio. 
+            Como dirigente deportivo,
+            fue presidente del Club Universitario de Deportes 
+            en varias etapas y vicepresidente 
+            de la Confederación Sudamericana de Fútbol (Conmebol). 
+            También tuvo una activa participación en la 
+            organización de torneos internacionales y 
+            en la promoción del fútbol 
+            profesional en Perú.</a>
         <img src="img/img.png">
     </body>
 
